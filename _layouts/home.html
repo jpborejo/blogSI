@@ -1,0 +1,66 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="titulo">
+        <header><h1>Bem-vindo jogador(a)</h1></header>
+    </div>
+    <nav class= "menu">
+        <ul>
+            <li><a href="#">Jogos</a>
+                <ul>
+                    <li><a href="#">LOL</a></li>
+                    <li><a href="#">The witcher</a></li>
+                    <li><a href="#">Skyrim</a></li>
+                </ul></li>
+            <li><a href="#">Colaboradores</a>
+                <ul>
+                    <li><a href="#">Geralt</a></li>
+                    <li><a href="#">Garen</a></li>
+                    <li><a href="#">Morgana</a></li>
+                </ul></li>
+            <li><a href="#">Eventos</a>
+                <ul>
+                    <li><a href="#">CBLOL 2020</a></li>
+                    <li><a href="#">Mundial 2020</a></li>
+                </ul></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <section >
+   <br></br>
+   <aside id="diretrizes" role="complementary">
+    <div class=diretrizes>
+        <h5>Diretrizes</h5>
+    <ol><h5>
+        <li>-Todos os jogos são bem vindos, desde os de celulares até os das mais novas gerações</li>
+        <li>-Não sintam vergonha nem medo de fazerem seus posts, todas as dúvidas são válidas e bem-vindas, afinal, todos já fomos iniciantes :)</li>
+        <li>-Comentários desrespeitosos serão excluídos e aqueles que os fizerem serão banidos</li>
+        <li>-Que a força esteja com você</li></h5>
+    </ol></div></section></aside>
+    <section class="posts">
+        <article class="artigo">
+            {% for post in site.posts %}
+            <header>
+                <h3><a href ="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            </header>
+            {{post.imagem}}
+            <h6><p>{{ post.descr }}</p></h6>
+                    <footer>
+                        <h6><p>Escrito por {{ post.autor }} em {{ post.date }}.</p></h6>
+                    </footer>
+            {% endfor %}
+        </article>
+    </section>
+        </article>
+    </section>
+</body>
+</html>

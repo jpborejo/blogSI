@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <div class="titulo">
+        <header><h1>{{page.title}}</h1></header>
+    </div>
+    <nav class= "menu">
+        <ul>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Jogos</a>
+                <ul>
+                    <li><a href="#">LOL</a></li>
+                    <li><a href="#">The witcher</a></li>
+                    <li><a href="#">Skyrim</a></li>
+                </ul></li>
+            <li><a href="#">Colaboradores</a>
+                <ul>
+                    <li><a href="#">Geralt</a></li>
+                    <li><a href="#">Garen</a></li>
+                    <li><a href="#">Morgana</a></li>
+                </ul></li>
+            <li><a href="#">Eventos</a>
+                <ul>
+                    <li><a href="#">CBLOL 2020</a></li>
+                    <li><a href="#">Mundial 2020</a></li>
+                </ul></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+    <br>
+    {{ content }}
+    
+    <p> Postado no dia {{ page.date }} na categoria {{ page.categories }} </p>
+    </body>
