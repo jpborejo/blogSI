@@ -4,7 +4,7 @@ title: " The Witcher III  "
 date: 2020-08-08 11:14:49-0500
 categories: jekyll update
 autor: Geralt
-imagem:  <img src="{{'imagens/witcher.jpg'| relative_url}}" alt="witcher" width"70px" height="70px" >
+imagem:  <img src="{{'imagens/witcher.jpg' | relative_url}}" alt="witcher" width"70px" height="70px" >
 descr: "Algum dia irão superar esse jogo?"
 ---
  
